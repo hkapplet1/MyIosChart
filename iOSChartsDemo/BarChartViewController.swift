@@ -25,7 +25,7 @@ class BarChartViewController: UIViewController , ChartViewDelegate{
         
         // Do any additional setup after loading the view, typically from a nib.
         months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
+        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 8.0]
         
         setChart( _ : months, values: unitsSold)
     }
