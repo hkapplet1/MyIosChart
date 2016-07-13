@@ -49,8 +49,13 @@ class BarChartViewController: UIViewController , ChartViewDelegate{
         chartDataSet.colors = ChartColorTemplates.colorful()
         barChartView.data = chartData
         barChartView.xAxis.labelPosition = .BothSided
+        barChartView.xAxis.labelTextColor = UIColor(red: 102/255, green: 51/255, blue: 0/255, alpha: 1)
         barChartView.descriptionText = ""
-        barChartView.backgroundColor = UIColor(red: 189/255, green: 195/255, blue: 199/255, alpha: 1)
+        
+        barChartView.backgroundColor = UIColor(red: 128/255, green: 229/255, blue: 255/255, alpha: 1)
+//        barChartView.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+//        barChartView.descriptionTextColor = UIColor(red: 255/255, green: 102/255, blue: 204/255, alpha: 1)
+
 //        barChartView.backgroundColor = UIColor(red: CGFloat(Double(arc4random_uniform(255)/255)), green: CGFloat(Double(arc4random_uniform(255)/255)), blue: CGFloat(Double(arc4random_uniform(255))/255), alpha: 1)
         barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .EaseInOutQuad)
         let ll = ChartLimitLine(limit: 10.0, label: "Target")
